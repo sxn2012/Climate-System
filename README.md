@@ -1,5 +1,10 @@
 # Climate Change Misinformation Detection
 This is the project 1 of NLP in 2020 S1.
+
+Author: Xinnan SHEN
+
+Completed Date: 06-05-2020
+
 ## Project Introduction
 These days, climate change has become a big problem that has a significant effect on our life. Some issues caused by climate change such as global warming, the melting of icebergs and the rising of sea levels have triggered serious consequences. Thus, it is quite essential to know accurate information about climate change and do our best to reduce the impact caused by it. However, it is not very easy to distinguish these documents with climate change misinformation from the documents without it just by hand, because their contents look quite similar. Therefore, it is quite useful to design and implement a system to automatically help people distinguish between the documents and tell us whether a given document contains climate change misinformation. In my project, the system is implemented by using machine learning methods and natural language processing tools. The results have shown that the model performs quite well and satisfies the anticipated goals despite the occurrence of some errors.
 

@@ -6,6 +6,7 @@ import os
 import codecs
 def merge_dict(d1,d2):
 	return {**d1,**d2}
+#convert the downloaded files into a json file
 def build_json():
 	current_path=os.path.abspath(os.curdir)
 	file_folder=os.path.join(current_path,"pages")
@@ -46,6 +47,8 @@ def build_json():
 	fout.write(str(dict_res))
 	fout.close()
 	return
+#combine external data with the provided data
+#get a combined json file
 def combine_json():
 	current_path=os.path.abspath(os.curdir)
 	fold=codecs.open(os.path.join(current_path,"train.json"),"r","utf-8")
