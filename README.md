@@ -24,7 +24,18 @@ keras
 
 If you haven't install these libraries, use `pip install` to install the required libraries.
 
+## Running Instructions
 
+This program contains four code files. To run this program, you need to run `crawl.py` and `clean.py` first before running `processing.ipynb`. The usage for the files are mentioned below:
+
+- crawl.py: This file is used for crawling additional data from the web.
+- clean.py: This file is used for change the crawled data into JSON format.
+- processing.ipynb: This notebook is used for building machine learning models and use the model to train and make predictions.
+- fig.py: This file is used for drawing the figure of results in development set.
+- train.json: This is a part of training data to be used in the training process of machine learning model.
+- dev.json: This is the development datset that will be used in developing the model and conducting hyper-parameter tuning.
+- test-unlabelled: This is the test dataset, and the model will make predictions based on it.
+- README.MD: This is the file you are reading; it describes the project and the running instructions.
 
 ## Project Dataset
 The dataset consists of provided dataset and external dataset crawled from the websites, namely NASA [^1]  and VOA [^2]. Specifically, I have downloaded news regarding global climate change from the NASA website and news of some other topics from the VOA website using requests. As the data from the NASA website is the truth about climate change, and the data from the VOA website is about topics other than climate change, so these data aren't climate change misinformation. The external dataset is useful for the climate change misinformation detection system, which will be used in the training process. To make the dataset easier to use, the additional data from the website is converted into JSON format, and each document contains a label (1 represents it is climate change misinformation, while 0 represents it isn't).
